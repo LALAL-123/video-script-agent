@@ -1,0 +1,38 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.4, pytest-9.1.1, pluggy-1.6.0 -- <本机路径>
+rootdir: <项目根目录>
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.14.1, cov-7.1.0
+collecting ... collected 28 items
+
+tests/test_core.py::test_step_limit_returns_explicit_incomplete PASSED   [  3%]
+tests/test_core.py::test_tool_call_limit_stops_run PASSED                [  7%]
+tests/test_core.py::test_finish_in_same_turn_as_tool_is_rejected PASSED  [ 10%]
+tests/test_core.py::test_decision_note_is_traced_but_not_passed_to_tool PASSED [ 14%]
+tests/test_core.py::test_tool_errors_become_observations PASSED          [ 17%]
+tests/test_core.py::test_fault_plan_once_then_recovers PASSED            [ 21%]
+tests/test_core.py::test_llm_exception_returns_failed PASSED             [ 25%]
+tests/test_core.py::test_invalid_finish_is_sent_back_to_model PASSED     [ 28%]
+tests/test_core.py::test_text_reply_without_tool_is_nudged PASSED        [ 32%]
+tests/test_core.py::test_openai_compat_parses_tool_calls_and_bad_json PASSED [ 35%]
+tests/test_core.py::test_text_tool_call_is_recovered_only_with_name_and_json PASSED [ 39%]
+tests/test_core.py::test_agent_executes_recovered_text_call_and_marks_trace PASSED [ 42%]
+tests/test_domain.py::test_search_returns_only_facts_from_materials PASSED [ 46%]
+tests/test_domain.py::test_estimate_reports_overrun PASSED               [ 50%]
+tests/test_domain.py::test_rules_catch_fabricated_numbers_banned_words_and_unknown_ids PASSED [ 53%]
+tests/test_domain.py::test_rules_accept_model_name_and_supported_numbers PASSED [ 57%]
+tests/test_domain.py::test_guard_requires_final_script_to_match_checked_version PASSED [ 60%]
+tests/test_domain.py::test_guard_blocks_overlong_and_unchecked_scripts PASSED [ 64%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c01_normal] PASSED [ 67%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c02_missing_info] PASSED [ 71%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c03_no_material] PASSED [ 75%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c04_tool_failure] PASSED [ 78%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c05_over_duration_fixed] PASSED [ 82%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c06_duration_cannot_meet] PASSED [ 85%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c07_rule_violation_fixed] PASSED [ 89%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c08_tool_failure_once] PASSED [ 92%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c09_step_limit] PASSED [ 96%]
+tests/test_domain.py::test_case_acceptance_with_offline_mock[c10_longer_target] PASSED [100%]
+
+============================= 28 passed in 0.07s ==============================

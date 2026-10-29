@@ -1,0 +1,63 @@
+{
+  "title": "c09_step_limit：执行上限：3 轮内无法完成压缩与检查，返回明确未完成（运行 1/1）",
+  "request": {
+    "topic": "快剪 App 自动字幕",
+    "audience": "vlog 新手",
+    "platform": "抖音",
+    "target_duration_sec": 30,
+    "style": "轻松"
+  },
+  "status": "incomplete",
+  "stop_reason": "step_limit_reached",
+  "llm": "openai-compat:glm-4-flash",
+  "steps": 3,
+  "tool_calls": 1,
+  "final": {
+    "title": "",
+    "shots": [],
+    "total_seconds": null,
+    "target_seconds": 30,
+    "sources": [],
+    "checks": {
+      "duration_checked": false,
+      "rules_checked": false,
+      "rules_passed": false
+    },
+    "estimates_seconds": [],
+    "risks": [],
+    "message": "未完成：step_limit_reached；已估算 0 版脚本，未形成通过检查的终稿。",
+    "task_status": "incomplete",
+    "stop_reason": "step_limit_reached"
+  },
+  "guard_corrections": [],
+  "trace": [
+    {
+      "step": 1,
+      "type": "no_tool_call",
+      "content": "{\"task_status\": \"needs_input\"}"
+    },
+    {
+      "step": 2,
+      "type": "tool_call",
+      "tool": "search_materials",
+      "arguments": {
+        "query": "快剪 App 自动字幕"
+      },
+      "decision_note": "根据主题检索产品素材",
+      "ok": true,
+      "observation": "{\"query\": \"快剪 App 自动字幕\", \"count\": 1, \"materials\": [{\"material_id\": \"P01\", \"product\": \"快剪 App\", \"facts\": [\"支持字幕\"], \"pain_point\": \"剪完视频还要一句一句手动敲字幕\", \"scenes\": [\"旅行记录\", \"探店\", \"日常 vlog\"]}], \"note\": \"只能使用 facts 中的产品事实\", \"ok\": true}",
+      "recovered_from_text": false
+    },
+    {
+      "step": 3,
+      "type": "no_tool_call",
+      "content": "{\"task_status\": \"duration_not_met\"}"
+    },
+    {
+      "step": 3,
+      "type": "stop",
+      "status": "incomplete",
+      "reason": "step_limit_reached"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"case_id": "c04_tool_failure", "title": "工具失败：规则检查服务持续不可用，不能声称脚本合规", "covers": ["工具失败"],
+ "request": {"topic": "X1 运动相机 骑行 vlog", "audience": "骑行爱好者", "platform": "抖音", "target_duration_sec": 60, "style": "真实分享"},
+ "faults": {"check_rules": {"mode": "always", "error": "规则服务 503（注入故障）"}}}

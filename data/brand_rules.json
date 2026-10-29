@@ -1,0 +1,13 @@
+{
+  "brand": "星拍",
+  "chars_per_second": 4.5,
+  "shot_overhead_seconds": 1,
+  "min_ratio_of_target": 0.6,
+  "rules": [
+    {"rule_id": "B01", "text": "标题与旁白不得使用绝对化用语", "banned_terms": ["最强", "最好", "第一", "顶级", "100%", "绝对", "完美", "秒杀", "史上"]},
+    {"rule_id": "B02", "text": "旁白和标题中的数字、百分比必须出现在该分镜引用素材的事实中（禁止编造效果数据）"},
+    {"rule_id": "B03", "text": "分镜引用的素材 ID 必须存在"},
+    {"rule_id": "B04", "text": "标题或旁白中至少出现一次品牌名"},
+    {"rule_id": "B05", "text": "标题不超过 30 个字"}
+  ]
+}

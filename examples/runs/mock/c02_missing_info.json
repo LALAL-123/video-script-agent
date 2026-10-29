@@ -1,0 +1,40 @@
+{
+  "title": "c02_missing_info：缺关键信息：没有平台和目标时长（运行 1/1）",
+  "request": {
+    "topic": "X1 运动相机",
+    "audience": "新手",
+    "style": "轻松"
+  },
+  "status": "needs_input",
+  "stop_reason": "model_finished",
+  "llm": "mock:scripted-policy",
+  "steps": 1,
+  "tool_calls": 0,
+  "final": {
+    "title": "",
+    "shots": [],
+    "total_seconds": null,
+    "target_seconds": null,
+    "sources": [],
+    "risks": [],
+    "checks": {
+      "duration_checked": false,
+      "rules_checked": false,
+      "rules_passed": false,
+      "script_hash": null
+    },
+    "task_status": "needs_input",
+    "message": "请补充：平台、目标时长。"
+  },
+  "guard_corrections": [],
+  "trace": [
+    {
+      "step": 1,
+      "type": "finish",
+      "decision_note": "关键信息缺失，不猜测",
+      "recovered_from_text": false,
+      "status": "needs_input",
+      "guard_corrections": []
+    }
+  ]
+}

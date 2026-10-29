@@ -1,0 +1,2 @@
+{"case_id": "c06_duration_cannot_meet", "title": "超时长后明确失败：8 秒目标，压到最精简仍超出", "covers": ["超时长后的明确失败"],
+ "request": {"topic": "快剪 App 自动字幕", "audience": "vlog 新手", "platform": "抖音", "target_duration_sec": 8, "style": "轻松"}}

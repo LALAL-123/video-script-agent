@@ -1,0 +1,2 @@
+{"case_id": "c10_longer_target", "title": "对照：同一素材目标改为 45 秒，首稿 38 秒无需压缩", "covers": ["正常生成"],
+ "request": {"topic": "快剪 App 自动字幕", "audience": "vlog 新手", "platform": "抖音", "target_duration_sec": 45, "style": "轻松"}}

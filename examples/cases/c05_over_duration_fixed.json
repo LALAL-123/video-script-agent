@@ -1,0 +1,2 @@
+{"case_id": "c05_over_duration_fixed", "title": "超时长后修正（参考实例）：P01 只有“支持字幕”，30 秒目标，首稿 38 秒需压缩", "covers": ["超时长后的修正", "正常生成"],
+ "request": {"topic": "快剪 App 自动字幕", "audience": "vlog 新手", "platform": "抖音", "target_duration_sec": 30, "style": "轻松"}}

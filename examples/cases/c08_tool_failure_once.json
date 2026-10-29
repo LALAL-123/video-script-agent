@@ -1,0 +1,3 @@
+{"case_id": "c08_tool_failure_once", "title": "工具偶发失败：时长估算第一次失败，重试后完成", "covers": ["工具失败"],
+ "request": {"topic": "快剪 App 自动字幕", "audience": "vlog 新手", "platform": "抖音", "target_duration_sec": 45, "style": "轻松"},
+ "faults": {"estimate_duration": {"mode": "once", "error": "估算服务超时（注入故障）"}}}
